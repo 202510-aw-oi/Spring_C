@@ -32,6 +32,7 @@
                 <th>タイトル</th>
                 <th>登録者</th>
                 <th>作成日</th>
+                <th>種類</th>
                 <th>詳細</th>
                 <th>編集</th>
                 <th>削除</th>
@@ -43,6 +44,7 @@
                 <td th:text="${todo.title}">title</td>
                 <td th:text="${todo.author}">author</td>
                 <td th:text="${#temporals.format(todo.createdAt, 'yyyy/MM/dd HH:mm')}">2026/02/02 00:00</td>
+                <td th:text="${todo.type}">type</td>
                 <td class="todo-detail" th:text="${todo.detail}" th:title="${todo.detail}">detail</td>
                 <td>
                     <a th:href="@{/edit/{id}(id=${todo.id})}">編集</a>

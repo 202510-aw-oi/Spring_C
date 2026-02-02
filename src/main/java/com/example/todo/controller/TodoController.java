@@ -46,6 +46,7 @@ public class TodoController {
         form.setAuthor(todo.getAuthor());
         form.setTitle(todo.getTitle());
         form.setDetail(todo.getDetail());
+        form.setType(todo.getType());
         model.addAttribute("todoForm", form);
         return "edit";
     }

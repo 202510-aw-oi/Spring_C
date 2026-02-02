@@ -5,6 +5,7 @@ public class TodoForm {
     private String author;
     private String title;
     private String detail;
+    private String type;
 
     public Long getId() {
         return id;
@@ -36,5 +37,13 @@ public class TodoForm {
 
     public void setDetail(String detail) {
         this.detail = detail;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

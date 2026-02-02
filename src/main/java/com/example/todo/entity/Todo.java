@@ -26,6 +26,9 @@ public class Todo {
     @Column(columnDefinition = "TEXT")
     private String detail;
 
+    @Column
+    private String type;
+
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
@@ -74,6 +77,14 @@ public class Todo {
 
     public void setDetail(String detail) {
         this.detail = detail;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public LocalDateTime getCreatedAt() {

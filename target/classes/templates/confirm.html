@@ -25,6 +25,7 @@
     <div>
         <p>登録者: <span th:text="${todoForm.author}">author</span></p>
         <p>タイトル: <span th:text="${todoForm.title}">title</span></p>
+        <p>種類: <span th:text="${todoForm.type}">type</span></p>
         <p>詳細: <span th:text="${todoForm.detail}">detail</span></p>
     </div>
 
@@ -32,6 +33,7 @@
         <input type="hidden" th:field="*{id}" />
         <input type="hidden" th:field="*{author}" />
         <input type="hidden" th:field="*{title}" />
+        <input type="hidden" th:field="*{type}" />
         <input type="hidden" th:field="*{detail}" />
         <div>
             <button type="submit">登録</button>
